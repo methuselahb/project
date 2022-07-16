@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto sans', sans-serif;
+}
+.logo-img{
+    width: 200px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.home-link{
+    font-weight: 500;
+    font-size: 26px;
+    color: #303030;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border-radius: 6px;
+    padding: 6px 6px 6px 6px;
+}
+
+.li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 50px 0px 10px;
+}
+.li a:hover {
+background: #1E90FF;
+color: #fff;
+}
+nav{
+    display: flex;
+    justify-content: left;
+    align-items:flex-start;
+    flex-direction: column;
+    
+}
+header {
+    border-bottom: 2px solid #303030;
+    padding-bottom: 10px;
+}
+.title{
+    font-size: 5vh;
+    color:#303030;
+    padding-bottom: 20px;
+    width:100%;
+    text-align: center;
+}
+.logo-div{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #303030;
+    position: relative;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 0 8%;
+}
+.container h1{
+    text-align: center;
+    font-weight: 600;
+    padding-top: 10%;
+    margin-bottom: 60px;
+    position: relative;
+}
+.container h1::after{
+    content: '';
+    background: #1E90FF;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.linha{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.servico{
+    text-align: center;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+a.fill-div{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    padding: 25px 10px;
+}
+a{
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.servico i{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color:#1E90FF;
+}
+.servico h2{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.servico:hover{
+    background:#1E90FF;
+    color:#fff;
+    transform: scale(1.05)
+}
+.servico:hover i{
+    color:#fff;
+}
